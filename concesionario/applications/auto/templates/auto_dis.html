@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos</title>
+</head>
+<body>
+
+    <h1>Lista</h1>
+
+    {% for elemento in Auto %}
+    <p>
+        marca: {{elemento.marca}} Modelo: {{elemento.modelo}} año: {{elemento.año}} cilindraje: {{elemento.cilindraje}} cantidad bodega: {{elemento.cantidad_bodega}}
+
+    </p>
+    {% endfor %}
+
+    
+    
+</body>
+</html>
